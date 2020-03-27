@@ -1,0 +1,3 @@
+#!/bin/bash
+cd $WM_PROJECT_DIR
+ctags --file-scope=no --extra=+qf --fields=+l -Rf .tags .
