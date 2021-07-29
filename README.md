@@ -1,4 +1,5 @@
 # tagsCreationViaCtags
+Firstly install ctags exuberant and then do these commands in terminal:
 1. cd $WM_PROJECT_USER_DIR
 2. run createTags
 3. run createMainTagInProjectRoot
