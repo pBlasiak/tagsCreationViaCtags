@@ -1,5 +1,6 @@
 #!/bin/bash
 chmod +x createTags createMainTagInProjectRoot delTags dirTags 
+
 echo "Copying createTags, createMainTagInProjectRoot, delTags and dirTags to: " 
 echo $WM_PROJECT_USER_DIR
 echo 
@@ -8,14 +9,24 @@ echo "Copying createTags, createMainTagInProjectRoot, deltags and dirTags to: "
 echo $WM_PROJECT_DIR
 echo 
 cp createTags createMainTagInProjectRoot delTags dirTags $WM_PROJECT_DIR
+
 echo "Go to "
 echo $WM_PROJECT_USER_DIR
 cd $WM_PROJECT_USER_DIR
+echo "Deleting old .tags files ..."
+echo
+./delTags
 echo "Running ./createTags ..."
 ./createTags
 echo "Running ./createMainTagInProjectRoot ..."
 ./createMainTagInProjectRoot
+
+echo "Go to "
+echo $WM_PROJECT_DIR
 cd $WM_PROJECT_DIR
+echo "Deleting old .tags files ..."
+echo
+./delTags
 echo "Running ./createTags ..."
 ./createTags
 echo "Running ./createMainTagInProjectRoot ..."

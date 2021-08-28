@@ -13,4 +13,4 @@ AllrunTags script do mainly these commands:
 5. run createTags
 6. run createMainTagInProjectRoot
 
-If you want to delet the .tags file run ./delTags
+If you want to delete the .tags files run ./delTags
