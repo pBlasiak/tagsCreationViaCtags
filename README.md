@@ -1,7 +1,11 @@
 # tagsCreationViaCtags
-Firstly install ctags exuberant and then download the repository and run ./AllrunTags
+Do these steps:
+1) install ctags exuberant 
+2) download the repository 
+3) load OpenFOAM variables (e.g. of1612)
+4) run ./AllrunTags
 
-This scripts do mainly these commands:
+AllrunTags script do mainly these commands:
 1. cd $WM_PROJECT_USER_DIR
 2. run createTags
 3. run createMainTagInProjectRoot
