@@ -1,0 +1,7 @@
+#!/bin/bash
+#find * -path "$WM_PROJECT_DIR/ThirdParty" -prune -o -type d -exec ./USUN {} \;
+#find * -path ./ThirdParty -prune -o -type d -exec ./USUN {} \;
+#find * -path ./ThirdParty -prune  -o -print
+#find . -type d -not -path ./ThirdParty -print -exec ./USUN {} \;
+find . -type d \( -not -path ./bin -not -path ./build -not -path ./doc -not -path ./etc -not -path ./modules -not -path ./platforms -not -path ./tutorials -not -path ./wmake -not -path ./ThirdParty \) -print -exec ./USUN {} \;
+
