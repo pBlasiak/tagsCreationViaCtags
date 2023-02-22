@@ -1,14 +1,14 @@
 #!/bin/bash
-chmod +x createTags createMainTagInProjectRoot delTags dirTags 
+chmod +x createTags createMainTagInProjectRoot delTags delTagsFromlnInclude dirTags 
 
 echo "Copying createTags, createMainTagInProjectRoot, delTags and dirTags to: " 
 echo $WM_PROJECT_USER_DIR
 echo 
-cp createTags createMainTagInProjectRoot delTags dirTags $WM_PROJECT_USER_DIR
-echo "Copying createTags, createMainTagInProjectRoot, deltags and dirTags to: " 
+cp createTags createMainTagInProjectRoot delTags delTagsFromlnInclude dirTags $WM_PROJECT_USER_DIR
+echo "Copying createTags, createMainTagInProjectRoot, deltags, delTagsFromlnInclude and dirTags to: " 
 echo $WM_PROJECT_DIR
 echo 
-cp createTags createMainTagInProjectRoot delTags dirTags $WM_PROJECT_DIR
+cp createTags createMainTagInProjectRoot delTags delTagsFromlnInclude dirTags $WM_PROJECT_DIR
 
 echo "Go to "
 echo $WM_PROJECT_USER_DIR
@@ -20,6 +20,8 @@ echo "Running ./createTags ..."
 ./createTags
 echo "Running ./createMainTagInProjectRoot ..."
 ./createMainTagInProjectRoot
+#echo "Deleting .tags from lnInclude directories ..."
+#./delTagsFromlnInclude
 
 echo "Go to "
 echo $WM_PROJECT_DIR
@@ -31,4 +33,6 @@ echo "Running ./createTags ..."
 ./createTags
 echo "Running ./createMainTagInProjectRoot ..."
 ./createMainTagInProjectRoot
+#echo "Deleting .tags from lnInclude directories ..."
+#./delTagsFromlnInclude
 

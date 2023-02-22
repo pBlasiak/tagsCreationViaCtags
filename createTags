@@ -1,4 +1,4 @@
 #!/bin/bash
 #find * -type d -exec ./dirTags {} \; # orig version but causes entering unnecessary dirs e.g. ThirdParty (due to *)
-find . -type d \( -not -path ./bin -not -path ./build -not -path ./doc -not -path ./etc -not -path ./modules -not -path ./platforms -not -path ./tutorials -not -path ./wmake -not -path ./ThirdParty \) -exec ./dirTags {} \; #-print can be added before -exec to see paths searched
+find . -type d \( -not -path ./bin -not -path ./build -not -path ./doc -not -path ./etc -not -path ./modules -not -path ./platforms -not -path ./tutorials -not -path ./lnInclude -not -path ./wmake -not -path ./ThirdParty \) -exec ./dirTags {} \; #-print can be added before -exec to see paths searched
 

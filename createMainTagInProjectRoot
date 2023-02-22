@@ -1,2 +1,2 @@
 #!/bin/bash
-ctags --c++-kinds=+p --file-scope=no --extra=+qf --fields=+iaS --language-force=C++ --exclude=.git --exclude=bin --exclude=platforms --exclude=build --exclude=doc --exclude=etc --exclude=modules --exclude=ThirdParty --exclude=tutorials --exclude=wmake -Rf .tags .
+ctags --file-scope=no --extra=+qf --fields=+l --exclude=.git --exclude=bin --exclude=platforms --exclude=build --exclude=doc --exclude=etc --exclude=modules --exclude=ThirdParty --exclude=tutorials --exclude=wmake -Rf .tags .
